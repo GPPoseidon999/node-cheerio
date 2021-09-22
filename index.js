@@ -32,7 +32,7 @@ const headers = {
 // 要查询的url地址
 const pageUrls = []
 // 查看多少页数据
-const pageCount = 5
+const pageCount = 10
 for (let index = 1; index <= pageCount; index++) {
     pageUrls.push(`${baseUrl}${index * 25}`)
 }
@@ -99,3 +99,4 @@ async.mapSeries(
         )
     }
 )
+
